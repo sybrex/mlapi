@@ -8,6 +8,7 @@ import aiohttp
 import asyncio
 from fastai.vision import *
 
+
 config = AppConfig('.env')
 
 app = Starlette()
