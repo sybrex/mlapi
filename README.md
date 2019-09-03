@@ -46,3 +46,12 @@ upstream uvicorn {
 ## Example
 
 <a href="https://viktors.info/labs/klitschko" target="_blank">Demo</a>
+
+## Resources
+
+* [Practical Deep Learning for Coders, v3](https://course.fast.ai/)
+* [How (and why) to create a good validation set](https://www.fast.ai/2017/11/13/validation-sets/)
+* [Tips for building large image datasets](https://forums.fast.ai/t/tips-for-building-large-image-datasets/26688)
+* [Starlette framework](https://www.starlette.io/)
+* [Cougar or not by Simon Willison](https://github.com/simonw/cougar-or-not)
+* [systemd](https://www.freedesktop.org/wiki/Software/systemd/)
