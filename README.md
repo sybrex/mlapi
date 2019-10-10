@@ -1,5 +1,7 @@
 # Machine Learning API
 
+[API docs](http://ml.viktors.info/docs)
+
 ## Projects
 
 ### Klitschko brothers image classifier
@@ -7,7 +9,7 @@ Predict who of two brothers is on the photo
 
 ### Odds Generator 
 
-Based on main markets: Match Result Full Time (MRFT), Over/Under Full Time 2.5(OUFT) and Both Teams to Score (BTS) generated other markets e.g Double Chance Full Time (DCFT), Match Result Half Time (MRHT) or Match Result Second Half (MRSH)
+Based on main markets: Match Result Full Time (MRFT), Over/Under Full Time 2.5(OUFT) and Both Teams to Score (BTS) generate other markets e.g Double Chance Full Time (DCFT), Match Result Half Time (MRHT) or Match Result Second Half (MRSH)
 
 ## Technical details
 
