@@ -1,8 +1,19 @@
-# API
+# Machine Learning API
 
-## Running uvicorn as a systemd service
+## Projects
 
-Edit /etc/systemd/system/klitschko.uvicorn.service
+### Klitschko brothers image classifier
+Predict who of two brothers is on the photo
+
+### Odds Generator 
+
+Based on main markets: Match Result Full Time (MRFT), Over/Under Full Time 2.5(OUFT) and Both Teams to Score (BTS) generated other markets e.g Double Chance Full Time (DCFT), Match Result Half Time (MRHT) or Match Result Second Half (MRSH)
+
+## Technical details
+
+### Running uvicorn as a systemd service
+
+Edit /etc/systemd/system/mlapi.uvicorn.service
 ```
 [Unit]
 Description=uvicorn server for machine learning api
@@ -19,7 +30,7 @@ Start the service
 sudo service klitschko.uvicorn.service start
 ```
 
-## Running behind nginx
+### Running behind nginx
 
 Edit /etc/nginx/conf.d/ml.viktors.info.conf
 ```
@@ -43,15 +54,18 @@ upstream uvicorn {
 }
 ```
 
-## Example
+### Examples
 
-<a href="https://viktors.info/labs/klitschko" target="_blank">Demo</a>
+* [Klitshchko image classifier](https://viktors.info/labs/klitschko)
+* [Sports odds generator](https://viktors.info/labs/markets)
 
-## Resources
+
+### Resources
 
 * [Practical Deep Learning for Coders, v3](https://course.fast.ai/)
+* [Starlette framework](https://www.starlette.io/)
+* [FastAPI framework](https://fastapi.tiangolo.com/)
 * [How (and why) to create a good validation set](https://www.fast.ai/2017/11/13/validation-sets/)
 * [Tips for building large image datasets](https://forums.fast.ai/t/tips-for-building-large-image-datasets/26688)
-* [Starlette framework](https://www.starlette.io/)
 * [Cougar or not by Simon Willison](https://github.com/simonw/cougar-or-not)
 * [systemd](https://www.freedesktop.org/wiki/Software/systemd/)
