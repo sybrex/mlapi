@@ -13,7 +13,7 @@ import aiohttp
 config = AppConfig('.env')
 app = FastAPI()
 
-async def predict_odds(base_markets, model_name):    
+def predict_odds(base_markets, model_name):    
     learner = load_learner(Path(config('LEARNER_PATH')), model_name)
     data = pd.Series(base_markets)
     prediction = learner.predict(data)
