@@ -42,19 +42,19 @@ async def markets(mrft_home: float = 1, mrft_draw: float = 1, mrft_away: float =
 
     return {
         'DCFT': {'name': 'Double Chance Full Time', 'odds': {
-            '1/2': await predict_odds(base_markets, config('DTFT_HOME_AWAY_MODEL')),
-            '1/X': await predict_odds(base_markets, config('DTFT_HOME_DRAW_MODEL')),
-            'X/2': await predict_odds(base_markets, config('DTFT_DRAW_AWAY_MODEL')),
+            '1/2': predict_odds(base_markets, config('DTFT_HOME_AWAY_MODEL')),
+            '1/X': predict_odds(base_markets, config('DTFT_HOME_DRAW_MODEL')),
+            'X/2': predict_odds(base_markets, config('DTFT_DRAW_AWAY_MODEL')),
         }},
         'MRHT': {'name': 'Match Result Half Time', 'odds': {
-            '1': await predict_odds(base_markets, config('MRHT_HOME_MODEL')),
-            'X': await predict_odds(base_markets, config('MRHT_DRAW_MODEL')),
-            '2': await predict_odds(base_markets, config('MRHT_AWAY_MODEL'))
+            '1': predict_odds(base_markets, config('MRHT_HOME_MODEL')),
+            'X': predict_odds(base_markets, config('MRHT_DRAW_MODEL')),
+            '2': predict_odds(base_markets, config('MRHT_AWAY_MODEL'))
         }},
         'MRSH': {'name': 'Match Result Second Half', 'odds': {
-            '1': await predict_odds(base_markets, config('MRSH_HOME_MODEL')),
-            'X': await predict_odds(base_markets, config('MRSH_DRAW_MODEL')),
-            '2': await predict_odds(base_markets, config('MRSH_AWAY_MODEL'))
+            '1': predict_odds(base_markets, config('MRSH_HOME_MODEL')),
+            'X': predict_odds(base_markets, config('MRSH_DRAW_MODEL')),
+            '2': predict_odds(base_markets, config('MRSH_AWAY_MODEL'))
         }}
     }
 
