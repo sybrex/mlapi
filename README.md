@@ -60,7 +60,7 @@ upstream uvicorn {
 ### Examples
 
 * [Klitshchko image classifier](https://viktors.info/labs/klitschko)
-* [Sports odds generator](https://viktors.info/labs/markets)
+* [Sports odds generator](https://viktors.info/labs/markets-generator)
 
 
 ### Resources
