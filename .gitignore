@@ -105,6 +105,7 @@ venv.bak/
 
 # ide
 .vscode/
+.idea
 
 # data
 data/*

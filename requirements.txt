@@ -9,12 +9,14 @@ chardet==3.0.4
 Click==7.0
 cycler==0.10.0
 cymem==2.0.2
+dataclasses==0.6
 fastai==1.0.58
 fastapi==0.42.0
 fastprogress==0.1.21
 h11==0.8.1
 httptools==0.0.13
 idna==2.8
+idna-ssl==1.1.0
 kiwisolver==1.1.0
 matplotlib==3.1.1
 multidict==4.5.2
@@ -24,7 +26,7 @@ numpy==1.17.2
 nvidia-ml-py3==7.352.0
 packaging==19.2
 pandas==0.25.1
-Pillow==6.2.0
+Pillow==6.2.2
 plac==0.9.6
 preshed==3.0.2
 pydantic==0.32.2
@@ -43,6 +45,7 @@ thinc==7.1.1
 torch==1.2.0
 torchvision==0.4.0
 tqdm==4.36.1
+typing-extensions==3.7.4
 urllib3==1.25.6
 uvicorn==0.9.0
 uvloop==0.13.0
