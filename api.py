@@ -69,7 +69,7 @@ def predict_image_from_bytes(bytes):
     pred_class, pred_idx, outputs = learner.predict(img)            
     return {
         'class': str(pred_class), 
-        'rate': round(to_np(outputs)[try_int(pred_idx)].item(), 2)
+        'rate': round(to_np(outputs)[try_int(pred_idx)].item() * 100, 2)
     }
 
 @app.get('/klitschko')
